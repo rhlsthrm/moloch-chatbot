@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ts": "tsc",
+    "build:image": "npm run build:ts && docker build -t rhlsthrm/moloch-bot .",
+    "push:image": "docker push rhlsthrm/moloch-bot"
   },
   "author": "",
   "license": "ISC",
