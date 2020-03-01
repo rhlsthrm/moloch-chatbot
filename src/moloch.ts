@@ -21,6 +21,9 @@ export const getActiveProposals = async () => {
           sharesRequested
           yesShares
           noShares
+          votingPeriodBegins
+          votingPeriodEnds
+          gracePeriodEnds
         }
         meta(id: "") {
           currentPeriod
