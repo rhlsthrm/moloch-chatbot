@@ -1,4 +1,3 @@
-import { config } from "dotenv"
 import fetch from "cross-fetch";
 import ApolloClient from "apollo-boost";
 import { gql } from "apollo-boost";
