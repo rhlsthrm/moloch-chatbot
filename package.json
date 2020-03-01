@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ts": "tsc",
     "build:image": "npm run build:ts && docker build -t rhlsthrm/moloch-bot .",
-    "push:image": "docker push rhlsthrm/moloch-bot"
+    "push:image": "docker push rhlsthrm/moloch-bot",
+    "start": "npm run build && node dist/discordBot.js",
+    "start:dev": "ts-node src/discordBot.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +23,7 @@
     "graphql": "^14.6.0",
     "moment": "^2.24.0",
     "node-window-polyfill": "^1.0.0",
+    "pm2": "^4.2.3",
     "qrcode-terminal": "^0.12.0",
     "typescript": "^3.8.3",
     "ws": "^7.2.1"
