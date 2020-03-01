@@ -9,7 +9,7 @@
     "build:image": "npm run build:ts && docker build -t rhlsthrm/moloch-bot .",
     "push:image": "docker push rhlsthrm/moloch-bot",
     "start": "npm run build && node dist/discordBot.js",
-    "start:dev": "ts-node src/discordBot.js"
+    "start:dev": "ts-node src/discordBot.ts"
   },
   "author": "",
   "license": "ISC",
