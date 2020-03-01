@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 import { RichEmbed } from "discord.js";
-import * as moment from "moment";
+import moment from "moment";
 
 const RED = "#aa174c";
 const GREEN = "#4daa17";
