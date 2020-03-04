@@ -9,6 +9,7 @@ const prefix = process.env.PREFIX || "!";
 const client = new Client();
 const commands: Collection<string, any> = new Collection();
 commands.set(getActiveProposalsCommand.name, getActiveProposalsCommand);
+commands.set("test", getActiveProposalsCommand);
 
 client.once("ready", () => {
   console.log("Ready!");

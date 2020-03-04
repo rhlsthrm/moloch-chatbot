@@ -11,7 +11,11 @@ export const getActiveProposals = async () => {
   const result = await client.query({
     query: gql`
       query GetActiveProposals {
-        proposals(where: { processed: false }) {
+        proposals(
+          where: { processed: false }
+          orderBy: proposalIndex
+          orderDirection: asc
+        ) {
           proposalIndex
           startingPeriod
           details
